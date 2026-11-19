@@ -7,8 +7,12 @@ license = "GPL-3.0-or-later"
 repository = "https://github.com/diegopn/potoo-algobox-interpreter"
 homepage = "https://diegopn.github.io/potoo-site/manual/algobox/"
 readme = "README.md"
-description = "An evaluation scaffold for a Rust package concerning AlgoBox, an educational algorithm environment."
+description = "A Rust interpreter for the textual AlgoBox educational algorithm language."
 
 [lib]
 name = "potoo_algobox_interpreter"
 path = "src/lib.rs"
+
+[[bin]]
+name = "potoo-algobox"
+path = "src/bin/potoo-algobox.rs"
