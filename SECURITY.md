@@ -10,4 +10,4 @@ For other project concerns, see [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_
 
 ## Current scope
 
-This repository contains only a minimal Rust crate scaffold. It does not parse or execute AlgoBox source and has no language runtime or sandbox. This policy must be updated before source execution is introduced.
+This crate parses and executes textual AlgoBox source. It does not sandbox programs. The host supplies input, output, cancellation, random values, plotting, pause, and configured-function calls. A host that loads extension functions or performs external actions should treat those callbacks as executable code. The interpreter limits execution steps, but that limit does not bound memory use or host-service behavior.
